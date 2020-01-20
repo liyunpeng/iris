@@ -1,0 +1,7 @@
+	my.web/web => D:\goworkspace\goweb\src\my.web\web
+	my.web/web/controllers => D:\goworkspace\goweb\src\my.web\web\controllers
+	my.web/web/datamodels => D:\goworkspace\goweb\src\my.web\web\datamodels
+	my.web/web/datasource => D:\goworkspace\goweb\src\my.web\web\datasource
+	my.web/web/middleware => D:\goworkspace\goweb\src\my.web\web\middleware
+	my.web/web/repositories => D:\goworkspace\goweb\src\my.web\web\repositories
+	my.web/web/services => D:\goworkspace\goweb\src\my.web\web\services

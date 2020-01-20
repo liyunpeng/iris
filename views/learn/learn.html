@@ -1,0 +1,626 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet">
+
+<head>
+    <title>首页</title>
+</head>
+
+<body>
+<a href="http://localhost:8080/bootstrap" > bootstrap</a>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <button id="contextButton" class="btn btn-lg" type="button" >context实验</button>
+        </div>
+        <div class="col-md-6">
+            <button id="clearbtn" class="btn btn-lg" type="button" >清空</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <textarea id="intext" rows="10" cols="50">
+            </textarea>
+        </div>
+        <div class="col-md-6">
+            <textarea id="outtxt" rows="10" cols="50">
+            </textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <button id="certButton" class="btn btn-lg" type="button" >生成证书和密钥</button>
+        </div>
+        <div class="col-md-6">
+            <button id="rangeButton" class="btn btn-lg" type="button" >range遍历</button>
+        </div>
+    </div>
+
+     <div class="row">
+            <div class="col-md-6">
+                <textarea id="certext" rows="10" cols="50">
+                </textarea>
+            </div>
+            <div class="col-md-6">
+                <textarea id="keytxt" rows="10" cols="50">
+                </textarea>
+            </div>
+     </div>
+
+     <div class="row">
+         <div class="col-md-6">
+             <button id="poolButton" class="btn btn-lg" type="button" >协程池</button>
+         </div>
+         <div class="col-md-6">
+             <button id="redisButton" class="btn btn-lg" type="button" >redis</button>
+         </div>
+     </div>
+
+      <div class="row">
+             <div class="col-md-6">
+                 <textarea id="certext" rows="10" cols="50">
+                 </textarea>
+             </div>
+             <div class="col-md-6">
+                 <textarea id="keytxt" rows="10" cols="50">
+                 </textarea>
+             </div>
+      </div>
+       <div class="row">
+           <div class="col-md-6">
+               <button id="updateButton" class="btn btn-lg" type="button" >版本更新</button>
+           </div>
+           <div class="col-md-6">
+               <button id="unSafeButton" class="btn btn-lg" type="button" >unsafe</button>
+           </div>
+       </div>
+
+        <div class="row">
+               <div class="col-md-6">
+                   <textarea id="certext" rows="10" cols="50">
+                   </textarea>
+               </div>
+               <div class="col-md-6">
+                   <textarea id="keytxt" rows="10" cols="50">
+                   </textarea>
+               </div>
+        </div>
+
+       <div class="row">
+           <div class="col-md-6">
+               <button id="syncPoolButton" class="btn btn-lg" type="button" >syncPool</button>
+           </div>
+           <div class="col-md-6">
+               <button id="scanPortButton" class="btn btn-lg" type="button" >端口扫描</button>
+           </div>
+       </div>
+
+        <div class="row">
+               <div class="col-md-6">
+                   <textarea id="certext" rows="10" cols="50">
+                   </textarea>
+               </div>
+               <div class="col-md-6">
+                   <textarea id="keytxt" rows="10" cols="50">
+                   </textarea>
+               </div>
+        </div>
+
+       <div class="row">
+           <div class="col-md-6">
+               <button id="publishButton" class="btn btn-lg" type="button" >发送消息</button>
+           </div>
+           <div class="col-md-6">
+               <button id="consumeButton" class="btn btn-lg" type="button" >消费消息</button>
+           </div>
+       </div>
+
+        <div class="row">
+               <div class="col-md-6">
+                   <textarea id="certext" rows="10" cols="50">
+                   </textarea>
+               </div>
+               <div class="col-md-6">
+                   <textarea id="keytxt" rows="10" cols="50">
+                   </textarea>
+               </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">
+            <button id="kafkaPublishButton" class="btn btn-lg" type="button" >kafka发送消息</button>
+
+        </div>
+        <div class="col-md-6">
+            <button id="kafkaConsumeButton" class="btn btn-lg" type="button" >kafka消费消息</button>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+                       <textarea id="certext" rows="10" cols="50">
+                       </textarea>
+        </div>
+        <div class="col-md-6">
+                       <textarea id="keytxt" rows="10" cols="50">
+                       </textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <button id="kafkaAsyncPublishButton" class="btn btn-lg" type="button" >kafka异步发送消息</button>
+
+        </div>
+        <div class="col-md-6">
+            <button id="xyz" class="btn btn-lg" type="button" >待定</button>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+                       <textarea id="certext" rows="10" cols="50">
+                       </textarea>
+        </div>
+        <div class="col-md-6">
+                       <textarea id="keytxt" rows="10" cols="50">
+                       </textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <button id="zookeeperButton" class="btn btn-lg" type="button" >zookeeper</button>
+
+        </div>
+        <div class="col-md-6">
+            <button id="zookeeperButton1" class="btn btn-lg" type="button" >zookeeper1</button>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <button id="elasticsearch" class="btn btn-lg" type="button" >elasticsearch</button>
+
+        </div>
+        <div class="col-md-6">
+            <button id="abc" class="btn btn-lg" type="button" >....</button>
+
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    window.onload = main;
+
+    var txtclean ;  //= document.getElementById('inttxt');
+    // txtclean.value = " ";
+
+    var txtclean1; // = document.getElementById('outtxt');
+    // txtclean1.value = " ";
+
+    function main() {
+        var oBtn = document.getElementById('contextButton');
+        oBtn.onclick = OnTransferButton;
+        var clearbtn = document.getElementById('clearbtn');
+        clearbtn.onclick = OnClearButton;
+
+        txtclean = document.getElementById('inttxt');
+        txtclean1 = document.getElementById('outtxt')
+
+        var certBtn = document.getElementById('certButton');
+        certBtn.onclick = OnCertButton;
+
+        var rangeBtn = document.getElementById('rangeButton');
+        rangeBtn.onclick = OnRangeButton;
+
+        var poolButton = document.getElementById('poolButton');
+        poolButton.onclick = OnPoolButton;
+
+
+        var redisButton = document.getElementById('redisButton');
+        redisButton.onclick = OnRedisButton;
+
+        var updateButton = document.getElementById('updateButton');
+        updateButton.onclick = OnUpdateButton;
+
+        var unSafeButton = document.getElementById('unSafeButton');
+        unSafeButton.onclick = OnUnsafeButton;
+
+        var syncPoolButton = document.getElementById('syncPoolButton');
+        syncPoolButton.onclick = OnSyncPoolButton;
+
+
+        var scanPortButton = document.getElementById('scanPortButton');
+        scanPortButton.onclick = OnScanPortButton;
+
+        var publishButton = document.getElementById('publishButton');
+        publishButton.onclick = OnPublishButton;
+
+        var consumeButton = document.getElementById('consumeButton');
+        consumeButton.onclick = OnConsumeButton;
+
+        var kafkaPublishButton = document.getElementById('kafkaPublishButton');
+        kafkaPublishButton.onclick = OnKafkaPublishButton;
+
+        var kafkaConsumeButton = document.getElementById('kafkaConsumeButton');
+        kafkaConsumeButton.onclick = OnKafkaConsumeButton;
+
+
+        var kafkaAsyncPublishButton = document.getElementById('kafkaAsyncPublishButton');
+        kafkaAsyncPublishButton.onclick = OnKafkaAsyncPublishButton;
+
+        var zookeeperButton = document.getElementById('zookeeperButton');
+        zookeeperButton.onclick = OnZookeeperButton;
+
+        var zookeeperButton1 = document.getElementById('zookeeperButton1');
+        zookeeperButton1.onclick = OnZookeeperButton1;
+
+        var elasticsearch = document.getElementById('elasticsearch');
+        elasticsearch.onclick = OnElasticSearch;
+
+    }
+
+    function OnTransferButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=contextLearn");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnClearButton() {
+        txtclean.value = " ";
+        txtclean1.value = " ";
+    }
+
+    function OnCertButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=certButton");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnRangeButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=arrslicerange");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnPoolButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=gopool");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnRedisButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=redis");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnUpdateButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=updateversion");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnUnsafeButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=unsafe");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnSyncPoolButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=syncpool");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+
+    function OnScanPortButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=scanport");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+
+    function OnPublishButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=publish");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+
+    function OnConsumeButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=consume");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnKafkaPublishButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=kafkaPublish");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+
+    function OnKafkaConsumeButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=kafkaConsume");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnKafkaAsyncPublishButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=kafkaAsyncPublish");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+
+
+    function OnZookeeperButton() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=zookeeper");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnElasticSearch() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        // xhr.open('get', "/learnajax?method=elastisearch");
+        xhr.open('get', "/learn/elasticsearch");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+    function OnZookeeperButton1() {
+        var xhr = new XMLHttpRequest();
+        var inputText = document.getElementById('intext').value;
+
+        xhr.open('get', "/learnajax?method=zookeeper1");
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var oTxt = document.getElementById('outtxt');
+                    oTxt.value = xhr.responseText;
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<script type="javascript">
+    func.prototype.mem1 = null;
+
+    func.prototype.func1 = function () {
+        document.write('func1 execute <br>');
+    }
+
+    var v = new func();
+    v.mem1 = 'mem1';
+    document.write('v.mem1 :' + v.mem1 + '<br>');
+    document.write('v.mem2 :' + v.mem2 + '<br>');
+    v.func1();
+
+    v.memFunc();
+    document.write('v.mem3.a1:' + v.mem3.a1 + '<br>');
+    document.write('v.mem3.a2:' + v.mem3.a2 + '<br>');
+    v.mem3.func1();
+
+
+    var v1 = {
+        mem1: 'mem1343',
+    };
+    document.write('v1.mem1:' + v1.mem1 + '<br>');
+
+    var typeJSON = {
+        'product': ['key1', '1111'],
+        'packs': ['key2', '222222']
+
+    };
+
+    document.write('typeJSON.product:' + typeJSON.product + '<br>');
+    document.write('typeJSON.product:' + typeJSON.product[0] + '<br>');
+
+    var array = [1, 2, 3, 4, 5, 6, 7];
+
+    /*
+    array.forEach(v=>{
+        document.write(v);
+    });
+    */
+
+
+    array.forEach(function (v) {
+        document.write('array : ' + v + '<br>');
+    });
+
+    var str = "Visit RUnoob";
+    var patt1 = /runoob/i;
+    document.write(str.match(patt1));
+</script>
+</body>
+</html>
