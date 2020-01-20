@@ -6,11 +6,7 @@ import (
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/mvc"
 	"html/template"
-	elasticesearch1 "my.web/elasticesearch"
-	gopoll "my.web/gopool"
-	kafka1 "my.web/kafka"
-	"my.web/lib"
-	"my.web/zookeeper"
+
 	"net/http"
 	"runtime"
 	"strings"
@@ -130,18 +126,6 @@ func OnLearnAjax(w http.ResponseWriter, r *http.Request) {
 		lib.Publish1(2)
 	} else if strings.Compare(method, "consume") == 0 {
 		lib.Consume(2)
-	} else if strings.Compare(method, "kafkaPublish") == 0 {
-		kafka1.Kafkaserver()
-	} else if strings.Compare(method, "kafkaConsume") == 0 {
-		kafka1.KafkaClient()
-	} else if strings.Compare(method, "kafkaAsyncPublish") == 0 {
-		kafka1.SaramaAsyncProducer()
-	} else if strings.Compare(method, "zookeeper") == 0 {
-		zookeeper.Zookeepermain()
-	} else if strings.Compare(method, "zookeeper1") == 0 {
-		zookeeper.Zookeepermain1()
-	} else if strings.Compare(method, "elastisearch") == 0 {
-		elasticesearch1.Es()
 	}
 }
 
